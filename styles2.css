@@ -1,4 +1,4 @@
-   import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
   ======VARIABLES======
@@ -28,11 +28,11 @@
   font-family: "Roboto", sans-serif;
   color: var(--text-color-main);
 }
-/*
+
 body {
   background-color: black;
 }
-  */
+
 
 a {
   text-decoration: none;
@@ -133,12 +133,12 @@ nav {
   display: flex;
 }
 
-.button-hightlight{
+.button-hightlight {
   background-color: white;
   color: black;
 }
 
-.button-nohightlight{
+.button-nohightlight {
   background-color: rgb(67, 67, 67);
   color: white;
 }
@@ -181,55 +181,52 @@ nav {
   color: rgb(145, 145, 145);
 }
 
-#column-content > div{
+#column-content > div {
   display: flex;
   gap: 16px;
 }
 
-#column-content > div > button{
+#column-content > div > button {
   padding: 8px 32px;
   font-size: var(--size-paragraphs);
   font-weight: 600;
   border-radius: 6px;
 }
 
-/*******////////////////////////////////////////////////////////////////////******************
-
-.selector1{
+.selector1 {
   flex-direction: column;
   align-items: center;
 }
 
-.plan-card{
+.plan-card {
   background-color: #0d0d0d; /* Fondo gris muy oscuro para la tarjeta */
-  border: 1px solid #1c1c1e;   /* Borde sutil */
-  border-radius: 16px;         /* Esquinas redondeadas suaves */
+  border: 1px solid #1c1c1e; /* Borde sutil */
+  border-radius: 16px; /* Esquinas redondeadas suaves */
   padding: 32px;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 440px;           /* Hace que todas midan exactamente lo mismo */
+  min-height: 440px; /* Hace que todas midan exactamente lo mismo */
 }
 
 .contenedorcolumnas {
   display: flex;
-  flex-direction: row;       /* Alinea las columnas en fila */
-  gap: 20px;                 /* Separación de 20px entre columnas */
+  flex-direction: row; /* Alinea las columnas en fila */
+  gap: 20px; /* Separación de 20px entre columnas */
   margin-top: 20px;
-  }
+}
 
-  /* Estilo para cada columna (Tarjeta de noticia) */
-  .columna {
+/* Estilo para cada columna (Tarjeta de noticia) */
+.columna {
   display: flex;
-  flex-direction: column;    
-  align-items: center;     
-  justify-content: center;   
-  gap: 15px;                 /* Separación de 15px entre los elementoss */
-  width: 300px;              /* Ancho fijo para cada columna */
-  padding: 20px;           
-  background-color: rgb(255, 255, 255);
-  border: 1px solid;         /* border del elemento */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Separación de 15px entre los elementoss */
+  width: 300px; /* Ancho fijo para cada columna */
+  padding: 20px;
+  border: 1px solid; /* border del elemento */
   border-radius: 8px;
-  text-align: center;        /* Centra el texto de los párrafos y títulos */
-  }
+  text-align: center; /* Centra el texto de los párrafos y títulos */
+}
