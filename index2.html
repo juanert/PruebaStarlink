@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starlink</title>
+    <link rel="stylesheet" href="./styles2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="">
+      <nav class="row flex-main-space-between flex-secondary-center">
+        <div class="row flex-secondary-center gap-standard">
+          <h2 id="logo">STARLINK</h2>
+          <a class="link-menu" href="#">Residencial</a>
+          <a class="link-menu" href="#">Itinerante</a>
+        </div>
+        <div class="row flex-secondary-center gap-standard">
+          <div class="row flex-secondary-center gap-standard buttons-menu">
+            <button class="button-active">Personal</button>
+            <button class="transparent button-inactive">Empresa</button>
+          </div>
+          <button class="circular-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="header-content">
+        <div
+          class="col-content flex column flex-secondary-center flex-main-center"
+        >
+          <div id="column-content" class="flex column">
+            <h1>
+              Fast, affordable <br />
+              internet
+            </h1>
+            <p>STARTING AT</p>
+            <h2>$55<span>/mo</span></h2>
+            <div class="flex gap-standard">
+              <button class="button-hightlight">Get Started</button>
+              <button class="button-nohightlight">View Pricing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <!-- SECCIÓN DE PLANES Y PRECIOS -->
+    <section class="selector1 row ">
+      
+      <!-- Selector de pestañas superior -->
+      <div class="tabs-container row">
+        <button class="button-active">En casa</button>
+        <button class="transparent button-inactive">En cualquier lugar</button>
+      </div>
+
+      <!-- Contenedor de las tres tarjetas de planes    cards-container row gap-standard-->
+      <div class="contenedorcolumnas">
+        
+        <!-- Tarjeta 1: Residencial 100 Mb/s   plan-card-->
+        <div class="columna">
+          <h3>Residencial: 100 Mb/s</h3>
+          <p class="plan-description">Hasta 100 Mb/s. Servicio de internet estable y asequible en el hogar. Datos ilimitados.</p>
+          <div class="price-container">
+            <span class="price-label">DESDE</span>
+            <h4 class="price-value">35 €<span>/mes</span></h4>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Residencial 200 Mb/s    plan-card -->
+        <div class="columna">
+          <h3>Residencial: 200 Mb/s</h3>
+          <p class="plan-description">Hasta 200 Mb/s. Servicio de internet rápido y estable para uso diario en el hogar con más dispositivos. Datos ilimitados.</p>
+          <div class="price-container">
+            <span class="price-label">DESDE</span>
+            <h4 class="price-value">45 €<span>/mes</span></h4>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Residencial Max plan-card -->
+        <div class="columna">
+          <h3>Residencial Max</h3>
+          <!--plan-description-->
+          <p class="">Nuestro servicio de internet doméstico de mayor rendimiento con las velocidades máximas disponibles.</p>
+          <!--plan-features-->
+          <ul class="">
+            <li>Hasta más de 400 Mbps</li>
+            <li>Datos ilimitados</li>
+            <li>El mejor wifi</li>
+          </ul>
+          <!--price-container-->
+          <div class="">
+            <!--price-label-->
+            <span class="">DESDE</span>
+            <!--price-value-->
+            <h4 class="">65 €<span>/mes</span></h4>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nota de descargo al pie de los precios -->
+      <p class="disclaimer-text">Las velocidades indicadas son las máximas disponibles, no están garantizadas y serán más lentas durante los momentos de congestión.</p>
+    </section>
+  </body>
+</html>
