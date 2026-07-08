@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas con CSS Grid</title>
+    <style>
+        /* Centra el contenedor en toda la pantalla */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            background-color: #f8fafc;
+            
+            display: grid;
+            place-items: center;  /* Atajo rápido de Grid para centrar horizontal y verticalmente */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Contenedor que define la rejilla de 2 columnas */
+        .grid-container {
+            display: grid;
+            /* Primera columna fija de 250px, segunda columna toma el resto (1fr) */
+            grid-template-columns: 250px 1fr; 
+            gap: 20px;            /* Espacio de separación */
+            width: 100%;
+            max-width: 1000px;    /* Ancho máximo del diseño centrado */
+        }
+
+        /* Columna Fina (Fija) */
+        .columna-fina {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Columna Principal (Flexible) */
+        .columna-principal {
+            background-color: #e0f2fe;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <aside class="columna-fina">
+            <h3>Menú Lateral</h3>
+            <p>Fijo en 250px mediante CSS Grid.</p>
+        </aside>
+
+        <main class="columna-principal">
+            <h2>Contenido Principal</h2>
+            <p>Flexible. Ocupa el espacio dinámico "1fr".</p>
+        </main>
+    </div>
+
+</body>
+</html>

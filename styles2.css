@@ -32,6 +32,7 @@
 body {
   background-color: black;
 }
+  
 
 a {
   text-decoration: none;
@@ -132,12 +133,12 @@ nav {
   display: flex;
 }
 
-.button-hightlight {
+.button-hightlight{
   background-color: white;
   color: black;
 }
 
-.button-nohightlight {
+.button-nohightlight{
   background-color: rgb(67, 67, 67);
   color: white;
 }
@@ -180,12 +181,12 @@ nav {
   color: rgb(145, 145, 145);
 }
 
-#column-content > div {
+#column-content > div{
   display: flex;
   gap: 16px;
 }
 
-#column-content > div > button {
+#column-content > div > button{
   padding: 8px 32px;
   font-size: var(--size-paragraphs);
   font-weight: 600;
@@ -194,77 +195,82 @@ nav {
 
 /*-------- SECCION 2-------------------*/
 
-.selector1 {
+.selector1{
   flex-direction: column;
   align-items: center;
   padding: 50px;
   gap: 40px;
 }
 
+
+
 .contenedorcolumnas2 {
   display: flex;
-  flex-direction: row; /* Alinea las columnas en fila */
-  gap: 20px; /* Separación de 20px entre columnas */
-}
+  flex-direction: row;       /* Alinea las columnas en fila */
+  gap: 20px;                 /* Separación de 20px entre columnas */
+  margin-top: 40px;
+  }
 
-/* Estilo para cada columna (Tarjeta de noticia) */
-.columna_info_sec1 {
+  /* Estilo para cada columna (Tarjeta de noticia) */
+  .columna_info_sec1 {
   display: flex;
-  flex-direction: column;
-  background: #121212;
+  flex-direction: column;    
+  align-items: center;  
+  background: #121212;   
   /*justify-content: center;   */
-  gap: 40px; /* Separación de 15px entre los elementoss */
-  width: 400px; /* Ancho fijo para cada columna */
-  padding: 20px;
-  border: 0px solid; /* border del elemento */
+  gap: 40px;                 /* Separación de 15px entre los elementoss */
+  width: 400px;              /* Ancho fijo para cada columna */
+  padding: 20px;           
+  border: 0px solid;         /* border del elemento */
   border-radius: 8px;
-  text-align: left; /* Centra el texto de los párrafos y títulos */
-  /* background-image:
+  text-align:left;        /* Centra el texto de los párrafos y títulos */
+ /* background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp");*/
-}
+  }
+  
+  .tab_container-button-section2>button{
+    padding: 8px 32px;
+    font-size: var(--size-paragraphs);
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 100px;
+  }
 
-.tab_container-button-section2 > button {
-  padding: 8px 32px;
-  font-size: var(--size-paragraphs);
-  font-weight: 600;
-  border-radius: 6px;
-}
+  /*---------SECCION 2---------------------------------*/
 
-/*---------SECCION 2---------------------------------*/
+  .selector2 {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(" https://starlink.com/assets-new/images/landing/field/v4_lightning.webp");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
 
-.selector2 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(" https://starlink.com/assets-new/images/landing/field/v4_lightning.webp");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-}
+  /*--------SECCION 3-------------*/
 
-/*--------SECCION 3-------------*/
+  .selector3 {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(" https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
 
-.selector3 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(" https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-}
+   /*--------SECCION 4 Imagenes SLICE o CARRUSEL --------------*/
+  
+  .selector4 {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(" https://starlink.com/assets-new/images/landing/illustrations/illustration_07.webp");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
 
-/*--------SECCION 4 Imagenes SLICE o CARRUSEL --------------*/
-
-.selector4 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(" https://starlink.com/assets-new/images/landing/illustrations/illustration_07.webp");
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
-}
-
-/*
+  /*
   .contenedor-principal {
       display: grid;
       padding: 20px;
@@ -279,43 +285,51 @@ nav {
   }
     */
 .grid-galeria {
-  display: grid;
-  /* 5 columnas fijas de 550px cada una */
-  grid-template-columns: repeat(5, 550px);
-  /* Separación entre los cuadros */
-  gap: 20px;
-  overflow: auto;
-}
+        display: grid;
+        /* 5 columnas fijas de 550px cada una */
+        grid-template-columns: repeat(5, 550px); 
+        /* Separación entre los cuadros */
+        gap: 20px; 
+        /* Evita que el grid se encoja y fuerza el scroll horizontal */
+        width: max-content; 
+    }
 
-/* CORRECCIÓN: Cambiado de guion bajo (_) a guion medio (-) para coincidir con el HTML */
-.cuadro-columna {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* MEDIDAS SOLICITADAS: Ancho 550px y Alto 450px */
-  width: 550px;
-  border-radius: 8px; /* Opcional: bordes estéticos */
-}
-.contenedor-slider::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
+    /* CORRECCIÓN: Cambiado de guion bajo (_) a guion medio (-) para coincidir con el HTML */
+    .cuadro-columna {
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: center;
+        
+        /* MEDIDAS SOLICITADAS: Ancho 550px y Alto 450px */
+        width: 550px;
+        height: 450px;
+        
+        overflow: auto;
+        border-radius: 8px; /* Opcional: bordes estéticos */
+    }
+      .contenedor-slider::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+      
 
+    
 /*--------SECCION 5 varios cuadros en ununa section --------------*/
-.selector5 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("  https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-}
+ .selector5 {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("  https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
 
-/*--------SECCION 6 conectalo orientalo al cielo--------------*/
-.selector6 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-}
+      /*--------SECCION 6 conectalo orientalo al cielo--------------*/
+ .selector6 {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
+
