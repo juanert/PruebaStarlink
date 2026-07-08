@@ -32,10 +32,6 @@
 body {
   background-color: black;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
 a {
   text-decoration: none;
@@ -196,11 +192,8 @@ nav {
   border-radius: 6px;
 }
 
-<<<<<<< Updated upstream
-=======
 /*-------- SECCION 2-------------------*/
 
->>>>>>> Stashed changes
 .selector1 {
   flex-direction: column;
   align-items: center;
@@ -208,39 +201,6 @@ nav {
   gap: 40px;
 }
 
-<<<<<<< Updated upstream
-.plan-card {
-  background-color: #0d0d0d; /* Fondo gris muy oscuro para la tarjeta */
-  border: 1px solid #1c1c1e; /* Borde sutil */
-  border-radius: 16px; /* Esquinas redondeadas suaves */
-  padding: 32px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 440px; /* Hace que todas midan exactamente lo mismo */
-}
-
-.contenedorcolumnas {
-  display: flex;
-  flex-direction: row; /* Alinea las columnas en fila */
-  gap: 20px; /* Separación de 20px entre columnas */
-  margin-top: 20px;
-}
-
-/* Estilo para cada columna (Tarjeta de noticia) */
-.columna {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px; /* Separación de 15px entre los elementoss */
-  width: 300px; /* Ancho fijo para cada columna */
-  padding: 20px;
-  border: 1px solid; /* border del elemento */
-  border-radius: 8px;
-  text-align: center; /* Centra el texto de los párrafos y títulos */
-=======
 .contenedorcolumnas2 {
   display: flex;
   flex-direction: row; /* Alinea las columnas en fila */
@@ -358,5 +318,4 @@ nav {
   background-size: cover;
   background-position: center;
   height: 80vh;
->>>>>>> Stashed changes
 }
