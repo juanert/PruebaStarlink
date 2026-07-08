@@ -258,7 +258,7 @@ nav {
   }
 
    /*--------SECCION 4 Imagenes SLICE o CARRUSEL --------------*/
-
+  
   .selector4 {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -268,29 +268,50 @@ nav {
     height: 80vh;
   }
 
-/* Contenedor que agrupa las 5 tarjetas */
-.contenedor-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
-    gap: 20px; /* Separación entre imágenes */
-    width: 90%; /* Ajusta el ancho total del bloque */
-    margin: 0 auto; /* Centra el bloque en la pantalla */
-    padding: 40px 0;
-}
+  /*
+  .contenedor-principal {
+      display: grid;
+      padding: 20px;
+      overflow: auto;
+  }
+  .cuadro-columna {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+   
+    
+  }
+    */
+.grid-galeria {
+        display: grid;
+        /* 5 columnas fijas de 550px cada una */
+        grid-template-columns: repeat(5, 550px); 
+        /* Separación entre los cuadros */
+        gap: 20px; 
+        /* Evita que el grid se encoja y fuerza el scroll horizontal */
+        width: max-content; 
+    }
 
-/* Forzar a cada tarjeta y a su imagen a renderizarse correctamente */
-.slide {
-    width: 100%;
-}
+    /* CORRECCIÓN: Cambiado de guion bajo (_) a guion medio (-) para coincidir con el HTML */
+    .cuadro-columna {
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: center;
+        
+        /* MEDIDAS SOLICITADAS: Ancho 550px y Alto 450px */
+        width: 550px;
+        height: 450px;
+        
+        overflow: auto;
+        border-radius: 8px; /* Opcional: bordes estéticos */
+    }
+      .contenedor-slider::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+      
 
-.slide img {
-    width: 100%;
-    height: 350px; /* Define una altura fija para que se vean uniformes */
-    object-fit: cover; /* Evita que la imagen se distorsione */
-    border-radius: 12px; /* Mantiene los bordes redondeados */
-}
-
-    /*--------SECCION 5 varios cuadros en ununa section --------------*/
+    
+/*--------SECCION 5 varios cuadros en ununa section --------------*/
  .selector5 {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
