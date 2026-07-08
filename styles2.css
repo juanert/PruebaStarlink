@@ -32,7 +32,10 @@
 body {
   background-color: black;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 a {
   text-decoration: none;
@@ -193,11 +196,19 @@ nav {
   border-radius: 6px;
 }
 
+<<<<<<< Updated upstream
+=======
+/*-------- SECCION 2-------------------*/
+
+>>>>>>> Stashed changes
 .selector1 {
   flex-direction: column;
   align-items: center;
+  padding: 50px;
+  gap: 40px;
 }
 
+<<<<<<< Updated upstream
 .plan-card {
   background-color: #0d0d0d; /* Fondo gris muy oscuro para la tarjeta */
   border: 1px solid #1c1c1e; /* Borde sutil */
@@ -229,4 +240,123 @@ nav {
   border: 1px solid; /* border del elemento */
   border-radius: 8px;
   text-align: center; /* Centra el texto de los párrafos y títulos */
+=======
+.contenedorcolumnas2 {
+  display: flex;
+  flex-direction: row; /* Alinea las columnas en fila */
+  gap: 20px; /* Separación de 20px entre columnas */
+}
+
+/* Estilo para cada columna (Tarjeta de noticia) */
+.columna_info_sec1 {
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+  /*justify-content: center;   */
+  gap: 40px; /* Separación de 15px entre los elementoss */
+  width: 400px; /* Ancho fijo para cada columna */
+  padding: 20px;
+  border: 0px solid; /* border del elemento */
+  border-radius: 8px;
+  text-align: left; /* Centra el texto de los párrafos y títulos */
+  /* background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp");*/
+}
+
+.tab_container-button-section2 > button {
+  padding: 8px 32px;
+  font-size: var(--size-paragraphs);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/*---------SECCION 2---------------------------------*/
+
+.selector2 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(" https://starlink.com/assets-new/images/landing/field/v4_lightning.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+/*--------SECCION 3-------------*/
+
+.selector3 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(" https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+/*--------SECCION 4 Imagenes SLICE o CARRUSEL --------------*/
+
+.selector4 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(" https://starlink.com/assets-new/images/landing/illustrations/illustration_07.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+/*
+  .contenedor-principal {
+      display: grid;
+      padding: 20px;
+      overflow: auto;
+  }
+  .cuadro-columna {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+   
+    
+  }
+    */
+.grid-galeria {
+  display: grid;
+  /* 5 columnas fijas de 550px cada una */
+  grid-template-columns: repeat(5, 550px);
+  /* Separación entre los cuadros */
+  gap: 20px;
+  overflow: auto;
+}
+
+/* CORRECCIÓN: Cambiado de guion bajo (_) a guion medio (-) para coincidir con el HTML */
+.cuadro-columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* MEDIDAS SOLICITADAS: Ancho 550px y Alto 450px */
+  width: 550px;
+  border-radius: 8px; /* Opcional: bordes estéticos */
+}
+.contenedor-slider::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/*--------SECCION 5 varios cuadros en ununa section --------------*/
+.selector5 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("  https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+/*--------SECCION 6 conectalo orientalo al cielo--------------*/
+.selector6 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+>>>>>>> Stashed changes
 }
